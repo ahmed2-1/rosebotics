@@ -14,7 +14,7 @@ class StopAction(Enum):
     HOLD = 'hold'
 
 
-class Snach3rRobot(object):
+class Snatch3rRobot(object):
     def __init__(self):
         pass
 
