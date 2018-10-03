@@ -32,12 +32,12 @@ class Snatch3rRobot(object):
         self.left_wheel.stop_spinning(stop_action)
         self.right_wheel.stop_spinning(stop_action)
 
-    def turn(self, n, direction):
+    def turn(self, n, direction, speed):
         initial_time = time.time()
         if direction == "right":
-            self.right_wheel.start_spinning(100)
+            self.right_wheel.start_spinning(speed)
         elif direction == "left":
-            self.left_wheel.start_spinning(100)
+            self.left_wheel.start_spinning(speed)
 
         while True:
             if time.time() - initial_time >= n:

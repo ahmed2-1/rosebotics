@@ -40,8 +40,6 @@ def run_test_go_stop():
 
 def test():
     testrobot = rb.Snatch3rRobot()
-    #right = self.right_wheel.start_spinning(n)
-    #left = self.left_wheel.start_spinning(n)
     testrobot.go_forward()
 
 
